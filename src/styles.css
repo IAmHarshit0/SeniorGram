@@ -1,0 +1,94 @@
+/* SeniorGram - Custom styles for senior-friendly interface */
+
+/* Global styles */
+body {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Increase contrast for better readability */
+.high-contrast {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Larger text for better readability */
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+/* Post styling */
+.post {
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.post:hover {
+    border-color: #f97316; /* Changed from blue to orange */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling with clear visual feedback */
+button, .button {
+    transition: all 0.2s ease;
+    font-weight: bold;
+}
+
+button:hover, .button:hover {
+    transform: scale(1.05);
+}
+
+button:active, .button:active {
+    transform: scale(0.98);
+}
+
+/* Form elements with clear focus states */
+input, textarea, select {
+    border: 2px solid #d1d5db;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #f97316; /* Changed from blue to orange */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.5); /* Changed from blue to orange */
+}
+
+/* Helper classes for accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Custom scrollbar for better visibility */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f97316; /* Changed from blue to orange */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ea580c; /* Changed from blue to darker orange */
+}

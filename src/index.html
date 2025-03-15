@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeniorGram - Social Media for Seniors</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-800">
+    <header class="bg-orange-600 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">SeniorGram</h1>
+            <div class="hidden md:flex text-xl">
+                <a href="#" class="mr-4 p-2 bg-orange-700 rounded-lg">Home Page</a>
+                <a href="#" class="p-2 bg-orange-700 rounded-lg">My Profile</a>
+            </div>
+            <button id="menuBtn" class="md:hidden p-2 bg-orange-700 rounded-lg text-xl">
+                Menu
+            </button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden mt-4 container mx-auto">
+            <a href="#" class="block p-2 bg-orange-700 rounded-lg mb-2 text-center text-xl">Home Page</a>
+            <a href="#" class="block p-2 bg-orange-700 rounded-lg text-center text-xl">My Profile</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 mt-6">
+        <div class="flex flex-col md:flex-row gap-6">
+            <!-- Left sidebar with navigation - hidden on mobile, visible on desktop -->
+            <div class="hidden md:block w-full md:w-1/4 bg-gray-600 p-4 rounded-lg shadow-lg text-white">
+                <nav class="text-xl">
+                    <ul class="space-y-4">
+                        <li><a href="#" class="block p-3 bg-orange-600 rounded-lg hover:bg-orange-700 text-white font-semibold">Home Page</a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-700 text-white">My Photos</a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-700 text-white">My Friends</a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-700 text-white">Messages</a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-700 text-white">Help & Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Mobile navigation menu - visible only on mobile -->
+            <div class="md:hidden w-full bg-gray-600 p-4 rounded-lg shadow-lg text-white mb-6">
+                <nav class="text-xl">
+                    <ul class="flex flex-wrap justify-center gap-2">
+                        <li><a href="#" class="inline-block p-3 bg-orange-600 rounded-lg hover:bg-orange-700 text-white font-semibold">Home</a></li>
+                        <li><a href="#" class="inline-block p-3 rounded-lg hover:bg-gray-700 text-white">Photos</a></li>
+                        <li><a href="#" class="inline-block p-3 rounded-lg hover:bg-gray-700 text-white">Friends</a></li>
+                        <li><a href="#" class="inline-block p-3 rounded-lg hover:bg-gray-700 text-white">Messages</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Main content area -->
+            <div class="w-full md:w-3/4">
+                <!-- Post creation area -->
+                <div class="bg-gray-600 p-4 rounded-lg shadow-lg mb-6 text-white">
+                    <h2 class="text-2xl mb-4">Share a Photo</h2>
+                    <div class="flex flex-col space-y-4">
+                        <textarea class="border p-3 rounded-lg text-xl" rows="3" placeholder="Write something about your photo..."></textarea>
+                        <button id="uploadPhotoBtn" class="bg-orange-600 text-white p-3 rounded-lg text-xl hover:bg-orange-700">Upload a Photo</button>
+                    </div>
+                </div>
+
+                <!-- Feed of posts -->
+                <div class="space-y-6" id="postsFeed">
+                    <!-- Sample posts will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-orange-600 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p class="text-xl">SeniorGram - Connecting Seniors © 2023</p>
+            <div class="mt-2">
+                <a href="#" class="text-lg underline mr-4">Help</a>
+                <a href="#" class="text-lg underline mr-4">Privacy</a>
+                <a href="#" class="text-lg underline">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
