@@ -93,11 +93,11 @@ function addNewPost(post) {
         <p class="text-xl mb-4">${post.postText}</p>
         <img src="${post.postImage}" alt="Post image" class="w-full rounded-lg mb-4">
         <div class="flex justify-between items-center mb-4">
-            <button class="like-button text-xl p-2 bg-gray-700 hover:bg-gray-800 rounded-lg text-white">
-                Like this post (${post.likes})
+            <button class="like-button text-xl p-2 bg-gray-700 hover:bg-gray-800 rounded-lg text-white flex items-center">
+                <span class="mr-2">❤️</span> Like this post (${post.likes})
             </button>
-            <button class="comment-button text-xl p-2 bg-gray-700 hover:bg-gray-800 rounded-lg text-white">
-                Add a comment
+            <button class="comment-button text-xl p-2 bg-gray-700 hover:bg-gray-800 rounded-lg text-white flex items-center">
+                <span class="mr-2">💬</span> Add a comment
             </button>
         </div>
         <div class="comments-section">
